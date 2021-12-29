@@ -2,25 +2,22 @@
 * {
     background-color: lightgray;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px 10px;
 }
-img {
-    max-width: 50%;
-}
+
 /* add color and new font style to my name*/
-header {
-    padding: 20px 35px;
-}
+
 header h1 {
     margin: 10px 10px;
     background-color: midnightblue;
     color: whitesmoke;
-    font-size: 56px;
+    font-size: 60px;
     font-weight: bold;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
 }
 header nav ul {
-    padding: 15px;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -29,13 +26,44 @@ header nav ul {
 }
 header nav ul li a {
     display: flex;
-    color: midnightblue;
-    font-size: 20px;
-    font-weight: bold;
+    color:rgb(36, 40, 63);
+    font-size: 25px;
+    font-weight:lighter;
     text-decoration: none;
-    border-bottom: midnightblue solid;
 }
 header nav ul li a:hover {
     background-color: midnightblue;
     color: white;
+}
+
+.about-me-img img {
+    max-width: 50%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
+}
+.about-me h2{
+    color: rgb(36, 40, 63);
+    font-size: 35px;
+    padding-top: 15px;
+    border-bottom: midnightblue solid;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+.about-me p {
+    color: darkslategray;
+    text-align: center;
+    font-size: 20px;
+}
+.my-projects h2 {
+    color: rgb(36, 40, 63);
+    font-size: 35px;
+    padding-top: 15px;
+    border-bottom: midnightblue solid;
+    border-radius: 10px;
+}
+.my-projects-img {
+    display: flex
+
 }
