@@ -56,6 +56,9 @@ header nav ul li a:hover {
     text-align: center;
     font-size: 20px;
 }
+.my-projects {
+    padding-bottom: 10px;
+}
 .my-projects h2 {
     color: rgb(36, 40, 63);
     font-size: 35px;
@@ -63,7 +66,30 @@ header nav ul li a:hover {
     border-bottom: midnightblue solid;
     border-radius: 10px;
 }
-.my-projects-img {
-    display: flex
-
+.my-projects-img { 
+    padding-top: 10px; 
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+}
+.my-projects-img:hover {
+    opacity: 0.5;
+}
+.contact-me h2 {
+    color: rgb(36, 40, 63);
+    font-size: 35px;
+    padding-top: 15px;
+    border-bottom: midnightblue solid;
+    border-radius: 10px;
+}
+.contact-me ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:start;
+    color: darkslategray;
+}
+.contact-me ul li a {
+    text-decoration: none;
+    color: midnightblue;
 }
