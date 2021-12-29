@@ -1,0 +1,41 @@
+/* add styling to the entire webpage*/
+* {
+    background-color: lightgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img {
+    max-width: 50%;
+}
+/* add color and new font style to my name*/
+header {
+    padding: 20px 35px;
+}
+header h1 {
+    margin: 10px 10px;
+    background-color: midnightblue;
+    color: whitesmoke;
+    font-size: 56px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header nav ul {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav ul li a {
+    display: flex;
+    color: midnightblue;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: midnightblue solid;
+}
+header nav ul li a:hover {
+    background-color: midnightblue;
+    color: white;
+}

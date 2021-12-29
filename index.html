@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashley's Portfolio</title>
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
     <!-- Title and Navigation -->
@@ -13,15 +14,16 @@
             Ashley Hodge
         </h1>
         <nav>
+            <!-- Links in the navigation scroll to the coresponding section -->
             <ul>
                 <li>
-                    About Me
+                   <a href="#about-me">About Me</a> 
                 </li>
                 <li>
-                    My Projects
+                   <a href="#my-projects">My Projects</a> 
                 </li>
                 <li>
-                    Contact Me
+                   <a href="#contact-me">Contact Me</a> 
                 </li>
             </ul>
         </nav>
@@ -30,7 +32,7 @@
         <div>
             <img src="./assets/images/IMG_1539.jpeg" alt="Ashley Hodge">
         </div>
-        <div>
+        <div id="about-me">
             <h2>
                 About Me
             </h2>
@@ -41,17 +43,17 @@
             </p>
         </div>
     </section>
-    <section>
+    <section id="my-projects">
         <div>
             <h2>
                 My Projects
             </h2>
         </div>
         <div>
-            
+            <img src="./assets/images/run -buddy.jpeg" alt="run buddy project">
         </div>
     </section>
-    <section>
+    <section id="contact-me">
         <div>
             <h2>
                 Contact Me 
@@ -59,7 +61,7 @@
         </div>
         <div>
             (865)765-4952 <br>
-           <a href="ashhodge@comcast.net"></a> ashhodge@comcast.net
+           <a href="ashhodge@comcast.net">ashhodge@comcast.net</a> 
         </div>
     </section>
 </body>
