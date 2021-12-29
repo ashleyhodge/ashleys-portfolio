@@ -2,7 +2,7 @@
 * {
     background-color: lightgray;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 10px 10px;
+    margin: 5px;
 }
 
 /* add color and new font style to my name*/
@@ -37,7 +37,7 @@ header nav ul li a:hover {
 }
 
 .about-me-img img {
-    max-width: 50%;
+    max-width: 40%;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -66,15 +66,20 @@ header nav ul li a:hover {
     border-bottom: midnightblue solid;
     border-radius: 10px;
 }
-.my-projects-img { 
-    padding-top: 10px; 
-    display: flex;
-    flex-wrap: wrap;
+.my-projects-img {
     width: 40%;
+    display: inline-block;
 }
+
+.my-projects-img img {
+    flex-wrap: wrap;
+    width: 100%;
+}
+
 .my-projects-img:hover {
     opacity: 0.5;
 }
+
 .contact-me h2 {
     color: rgb(36, 40, 63);
     font-size: 35px;
@@ -92,4 +97,28 @@ header nav ul li a:hover {
 .contact-me ul li a {
     text-decoration: none;
     color: midnightblue;
+}
+@media screen and (max-width: 980px) {
+    header {
+        justify-content: center;
+    }
+    header h1 {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 575px) {
+    .about-me {
+        text-align: center;
+    }
+    .my-projects {
+        text-align: center;
+    }
+    .contact-me {
+        text-align: center;
+    }
+    .my-projects-img {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
 }
