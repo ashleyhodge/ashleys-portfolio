@@ -1,7 +1,11 @@
+/* apply font, background-color, and margins for the overall webpage */
 * {
     background-color: lightgray;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 5px;
+    margin: 5px;    
+    color: darkslategray;
+
+    font-size: 20px;
 }
 header h1 {
     margin: 10px 10px;
@@ -10,9 +14,9 @@ header h1 {
     font-size: 60px;
     font-weight: bold;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 20px;
 }
+/* Add flexbox to nav section so they wrap */
 header nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -27,19 +31,21 @@ header nav ul li a {
     font-weight:lighter;
     text-decoration: none;
 }
+/* add hover feature to nav section */
 header nav ul li a:hover {
     background-color: midnightblue;
     color: white;
 }
 .primary-title {
-       color: rgb(36, 40, 63);
+    color: rgb(36, 40, 63);
     font-size: 35px;
     padding-top: 15px;
     border-bottom: midnightblue solid;
     border-radius: 10px;
     padding-bottom: 10px; 
 }
-.about-me-img img {
+/* add display: flex so that image resizes as the webpage resizes */
+.about-me img {
     max-width: 40%;
     display: flex;
     margin-left: auto;
@@ -49,12 +55,7 @@ header nav ul li a:hover {
     border-radius: 50px;
 }
 .about-me p {
-    color: darkslategray;
     text-align: center;
-    font-size: 20px;
-}
-.my-projects {
-    padding-bottom: 10px;
 }
 .my-projects-img {
     width: 40%;
@@ -64,12 +65,13 @@ header nav ul li a:hover {
 .my-projects-img img {
     flex-wrap: wrap;
     width: 100%;
-    padding-left: 40px;
+    padding-left: 60px;
 }
+/* add opacity and transform feature to enlarge and make images translucent when you hover */
 .my-projects-img img:hover {
     opacity: 0.5;
-    transform:scale(1.04);
-    padding-left: 35px;
+    transform:scale(1.02);
+    padding-left: 60px;
 }
 .contact-me ul {
     list-style: none;
@@ -83,36 +85,30 @@ header nav ul li a:hover {
     text-decoration: none;
     color: midnightblue;
     font-size: 20px;
+    padding-bottom: 30px;
 }
-@media screen and (max-width: 980px) {
-    header {
-        justify-content: center;
-    }
-    header h1 {
-        text-align: center;
-    }
-}
+/* Add modifications to style when needed at different screen sizes */
 @media screen and (max-width: 768px) {
-        .my-projects-img {
+    /* Make the project images change from inline to flex-wrap */
+    .my-projects-img {
         display: flex;
         flex-wrap: wrap;
         width: 90%;
     }
+    .my-projects-img img {
+        padding-left: 20px;
+    }
 }
 @media screen and (max-width: 575px) {
-    .about-me {
+    /* change the alignment of the section titles to the center */
+    .primary-title {
         text-align: center;
     }
-    .my-projects {
-        text-align: center;
-    }
-    .contact-me {
-        text-align: center;
-    }
+    /* make sure images wrap properly */
     .my-projects-img img {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        padding-left: 5px;
+        margin-left: auto;
     }
 }
