@@ -4,9 +4,6 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 5px;
 }
-
-/* add color and new font style to my name*/
-
 header h1 {
     margin: 10px 10px;
     background-color: midnightblue;
@@ -35,21 +32,20 @@ header nav ul li a:hover {
     background-color: midnightblue;
     color: white;
 }
-
+.primary-title {
+       color: rgb(36, 40, 63);
+    font-size: 35px;
+    padding-top: 15px;
+    border-bottom: midnightblue solid;
+    border-radius: 10px;
+    padding-bottom: 10px; 
+}
 .about-me-img img {
     max-width: 40%;
     display: flex;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 15px;
-}
-.about-me h2{
-    color: rgb(36, 40, 63);
-    font-size: 35px;
-    padding-top: 15px;
-    border-bottom: midnightblue solid;
-    border-radius: 10px;
-    padding-bottom: 10px;
 }
 .about-me p {
     color: darkslategray;
@@ -59,33 +55,20 @@ header nav ul li a:hover {
 .my-projects {
     padding-bottom: 10px;
 }
-.my-projects h2 {
-    color: rgb(36, 40, 63);
-    font-size: 35px;
-    padding-top: 15px;
-    border-bottom: midnightblue solid;
-    border-radius: 10px;
-}
 .my-projects-img {
     width: 40%;
     display: inline-block;
+    padding-right: 40px;
 }
-
 .my-projects-img img {
     flex-wrap: wrap;
     width: 100%;
+    padding-left: 40px;
 }
-
-.my-projects-img:hover {
+.my-projects-img img:hover {
     opacity: 0.5;
-}
-
-.contact-me h2 {
-    color: rgb(36, 40, 63);
-    font-size: 35px;
-    padding-top: 15px;
-    border-bottom: midnightblue solid;
-    border-radius: 10px;
+    transform:scale(1.04);
+    padding-left: 35px;
 }
 .contact-me ul {
     list-style: none;
@@ -93,10 +76,12 @@ header nav ul li a:hover {
     flex-wrap: wrap;
     justify-content:start;
     color: darkslategray;
+    font-size: 20px;
 }
 .contact-me ul li a {
     text-decoration: none;
     color: midnightblue;
+    font-size: 20px;
 }
 @media screen and (max-width: 980px) {
     header {
@@ -104,6 +89,14 @@ header nav ul li a:hover {
     }
     header h1 {
         text-align: center;
+    }
+
+}
+@media screen and (max-width: 768px) {
+        .my-projects-img {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
     }
 }
 @media screen and (max-width: 575px) {
@@ -116,9 +109,10 @@ header nav ul li a:hover {
     .contact-me {
         text-align: center;
     }
-    .my-projects-img {
+    .my-projects-img img {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        padding-left: 5px;
     }
 }
