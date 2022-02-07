@@ -1,11 +1,17 @@
 /* apply font, background-color, and margins for the overall webpage */
 * {
-    background-color: lightgray;
+    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 5px;    
     color: darkslategray;
 
     font-size: 20px;
+}
+.bg-primary {
+    background-color: rgb(8, 8, 29);
+}
+body {
+    background-image: linear-gradient(rgb(122, 6, 6),rgb(8, 8, 29));
 }
 header h1 {
     margin: 10px 10px;
